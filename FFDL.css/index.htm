@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>FFDL - Fill Fancy Div Link</title>
+<!-- <link rel="stylesheet" href="one.css"> Decided to exclude the external css file in 
+favor of just putting the css within the <style> tag below since this page is intended to remain singular.
+You can put it into an external css file if you want to, of course. -->
+<style>
+body {
+	position: relative;
+	background: #333;
+	min-width: 600px;
+	color: #EEE;
+	font-family: sans-serif;
+	position: relative;
+	margin: 1em 15%;
+}
+* {
+	border-radius: 3px;
+}
+.fancy {
+	width: 100px;
+	height: 70px;
+	background: #020202 url('picture.jpg') left -30px;
+	opacity: .5;
+	-webkit-transition: all 1s ease-in-out 500ms;
+	-ms-transition: all 1s ease-in-out 500ms;
+	-moz-transition: all 1s ease-in-out 500ms;
+	-o-transition: all 1s ease-in-out 500ms;
+	transition: all 1s ease-in-out 500ms;
+	margin: 0 0 .75em;
+}
+.fancy:hover {
+	opacity: 1;
+	width: 33%;
+	height: 150px;
+	background: #020202 url('picture.jpg') center -45px;
+}
+.fill {
+/*  vvvvvvvvvvvvvvv   <-- We change the 'display' type to 'block' instead of the default 'inline' style anchor tags use */
+	display: block; /* we could use 'inline-block' as well, depending on what your layout calls for */
+	width: 100%;
+	height: 100%;
+}
+code {
+	position: relative;
+	padding: 1%;
+	display: inline-block;
+	font-size: 75%;
+	background: white;
+	color: black;
+	width: 47%;
+	text-wrap: unrestricted;
+	vertical-align: top;
+}
+</style>
+</head>
+
+<body>
+<p>You want to make a fancy div that links to something, and, you want the entire area of the div to be clickable.
+Perhaps you want it to work without need for Javascript as well.</p>
+<div class="fancy">
+	<a class="fill" href="http://www.bing.com" target="_blank" title="Simple Link">
+	<!-- The title tag can be useful for brief descriptions for a visitor ^^^^^^^^^^ -->
+	<!-- vvvvvvvvvvvvvvvvv   <-- If you need/want an alt tag for SEO purposes, just include it with a blank image within the anchor -->
+	<img alt="Simple Link" src="blank.png"></a>
+</div>
+<code>
+CSS Code: <br><br>.fancy {<br>width: 100px;<br>height: 70px;<br>background: 
+#020202 url('picture.jpg') left -30px;<br>opacity: .5;<br>-webkit-transition: 
+all 1s ease-in-out 500ms;<br>-ms-transition: all 1s ease-in-out 500ms;<br>
+-moz-transition: all 1s ease-in-out 500ms;<br>-o-transition: all 1s ease-in-out 
+500ms;<br>transition: all 1s ease-in-out 500ms;<br>margin: 0 0 .75em;<br>}<br>
+.fancy:hover {<br>opacity: 1;<br>width: 33%;<br>height: 150px;<br>background: 
+#020202 url('picture.jpg') center -45px;<br>}<br>.fill {<br>/* We change the 'display' type to 'block' instead of the default 'inline' 
+style anchor tags use */<br>display: block; /* We could use 'inline-block' 
+instead as well; it depending on what your layout calls for. For this HTML 
+produce the same desired effect. */<br>width: 100%;<br>height: 100%;<br>}<br>
+</code>
+<code>
+HTML code: <br><br>
+&lt;div class="fancy"&gt;<br>&lt;a class="fill" href="http://www.bing.com" 
+target="_blank" title="Simple Link"&gt;<br>&lt;!-- The title tag can be useful 
+for brief descriptions for a visitor --&gt;<br>&lt;!-- If you need/want an alt tag for SEO purposes, just include it with a blank 
+image within the anchor --&gt;<br>&lt;img alt="Simple Link" src="blank.png"&gt;&lt;/a&gt;<br>
+&lt;/div&gt;</code>
+
+
+</body>
+
+</html>
