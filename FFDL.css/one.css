@@ -1,0 +1,24 @@
+﻿.fancy {
+width: 100px;
+height: 70px;
+background: #020202 url('picture.jpg') left -30px;
+opacity: .5;
+-webkit-transition: all 1s ease-in-out 500ms;
+-ms-transition: all 1s ease-in-out 500ms;
+-moz-transition: all 1s ease-in-out 500ms;
+-o-transition: all 1s ease-in-out 500ms;
+transition: all 1s ease-in-out 500ms;
+margin: 0 0 .75em;
+}
+.fancy:hover {
+opacity: 1;
+width: 33%;
+height: 150px;
+background: #020202 url('picture.jpg') center -45px;
+}
+.fill {
+/* We change the 'display' type to 'block' instead of the default 'inline' style anchor tags use */
+display: block; /* We could use 'inline-block' instead as well; it depending on what your layout calls for. For this HTML produce the same desired effect. */
+width: 100%;
+height: 100%;
+}
