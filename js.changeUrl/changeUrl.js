@@ -10,7 +10,7 @@ function toPage() { // start the function called toPage
     var length = fixTo.length;
     var findLast = fixTo.charAt(length - 1); // check the last character of the URL for forward slash '/'
     if (findLast != '/') { // if the last character of findLast is not a fwd slash
-        whereNow = fixTo + '/' + selected + '/index.htm'; // take the value of the adjusted fixTo URL, add a slash & add the value pulled from the dropdown
-    } else whereNow = fixTo + selected + '/index.htm';  // else, if we found a slash at the end of the URLsimply add the value from dropdown
+        whereNow = fixTo + '/' + selected + '/index.htm'; // take the value of the adjusted fixTo URL, add a slash & add the value pulled from the dropdown & add the index filename
+    } else whereNow = fixTo + selected + '/index.htm';  // else, if we found a slash at the end of the URL, simply add the value from dropdown & add the index filename
     document.location = whereNow; // change the browser location to the value of whereNow
 } //close this function
