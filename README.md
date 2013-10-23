@@ -1,3 +1,3 @@
 Kald
 ====
-Various scripts and tips acquired along the process of developing Kald. We make them available, feel free. Thanks.
+Various scripts and tips that came along the process of developing Kald. Feel free.
